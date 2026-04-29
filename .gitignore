@@ -1,0 +1,132 @@
+# .gitignore - 2D Physics Engine
+
+# Build artifacts
+build/
+bin/*.exe
+bin/*_debug*
+bin/2DPhysicsEngine
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# IDE and editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/c_cpp_properties.json
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Code::Blocks
+*.cbp
+*.depend
+*.layout
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+CMakeLists.txt.user*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+*.pid
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+_CPack_Packages/
+
+# Make
+Makefile.bak
+*.make
+
+# Package managers
+vcpkg_installed/
+conan.lock
+conanbuildinfo.*
+
+# Documentation build
+docs/build/
+docs/_build/
+*.pdf
+*.html
+
+# Test artifacts
+test_results/
+coverage/
+*.gcov
+*.gcno
+*.gcda
+
+# Profiling
+*.prof
+gmon.out
+callgrind.out.*
+massif.out.*
+
+# Debugging
+core
+core.*
+vgcore.*
+*.dSYM/
+
+# Platform specific
+*.exe.stackdump
+.gdb_history
+
+# Assets (optional - uncomment if assets shouldn't be tracked)
+# assets/generated/
+# *.png.bak
+# *.jpg.bak
+
+# Local configuration
+config.local
+.env.local
+local.properties
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Archives
+*.zip
+*.tar.gz
+*.7z
+
+# Generated documentation
+doc/html/
+doc/latex/
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+*.dmg

@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Build SDL2 Project",
+      "command": "C:/mingw64/bin/g++.exe",
+      "args": [
+        "-g",
+        "-w",
+        "-std=c++17",
+
+        "${workspaceFolder}/src/Main.cpp",
+        "${workspaceFolder}/src/Graphics.cpp",
+        "${workspaceFolder}/src/Application.cpp",
+        "${workspaceFolder}/src/Physics/Body.cpp",
+        "${workspaceFolder}/src/Math/Vec2.cpp",
+        "${workspaceFolder}/src/Math/VecN.cpp",
+        "${workspaceFolder}/src/Math/MatMn.cpp",
+        "${workspaceFolder}/src/Physics/Shape.cpp",
+        "${workspaceFolder}/src/Physics/Force.cpp",
+        "${workspaceFolder}/src/Physics/CollisionDetection.cpp",
+        "${workspaceFolder}/src/Physics/World.cpp",
+        "${workspaceFolder}/src/Physics/Constraint.cpp",
+        "${workspaceFolder}/src/SDL2Ext/SDL2_gfxPrimitives.c",
+        "${workspaceFolder}/src/SDL2Ext/SDL2_imageFilter.c",
+        "${workspaceFolder}/src/SDL2Ext/SDL2_rotozoom.c",
+
+        "-I${workspaceFolder}/include",
+        "-I${workspaceFolder}/vendor/SDL2/include",
+        "-L${workspaceFolder}/lib",
+        "-lmingw32",
+        "-lSDL2main",
+        "-lSDL2",
+        "-lSDL2_image",
+        "-o",
+        "${workspaceFolder}/bin/game.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Builds the SDL2 project into bin/game.exe"
+    }
+  ]
+}
