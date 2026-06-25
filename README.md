@@ -7,6 +7,12 @@ A comprehensive 2D physics simulation engine built with C++ and SDL2, featuring 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
+## Screenshots
+
+![2D Physics Engine debug view](assets/screenshots/debug-physics-view.png)
+
+![2D Physics Engine textured simulation](assets/screenshots/textured-physics-simulation.png)
+
 ## 🚀 Features
 
 ### Core Physics
